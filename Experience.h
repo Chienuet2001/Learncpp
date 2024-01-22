@@ -13,6 +13,8 @@ public:
     Experience(int _expInYear, string _proSkill, int _id, string _fullName, string _phone, string _email, EmployeeType _employeeType, const vector<Certificate *> &_certificates)
         : Employee(_id, _fullName, _phone, _email, _employeeType, _certificates), expInYear(_expInYear), proSkill(_proSkill) {}
 
+    ~Experience() {}
+
     void setExpInYear(int _expInYear)
     {
         expInYear = _expInYear;

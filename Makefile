@@ -1,13 +1,13 @@
-all: clean compile run
+CC = g++
+CFLAGS = -Wall -g
 
-compile:
-	g++ main.cpp -o output.exe
+TARGET = main
 
-run: compile
-	./output.exe
+all: $(TARGET)
+	./$(TARGET).exe
 
-clean:
-	del output.exe
-
-.PHONY: all compile run clean
+$(TARGET) : $(TARGET).cpp
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cpp
 	
+clean:
+	del $(TARGET).exe

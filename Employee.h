@@ -32,6 +32,14 @@ public:
         employeeCount++;
     }
 
+    ~Employee()
+    {
+        for (auto cert : certificates)
+        {
+            delete cert;
+        }
+    }
+
     int getID() const
     {
         return id;

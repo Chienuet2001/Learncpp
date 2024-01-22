@@ -16,6 +16,8 @@ public:
     Intern(string _major, int _semester, string _uniName, int _id, string _fullName, string _phone, string _email, EmployeeType _employeeType, const vector<Certificate *> &_certificates)
         : Employee(_id, _fullName, _phone, _email, _employeeType, _certificates), major(_major), semester(_semester), uniName(_uniName) {}
 
+    ~Intern() {}
+
     void setMajor(string _major)
     {
         major = _major;

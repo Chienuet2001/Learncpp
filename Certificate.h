@@ -13,7 +13,7 @@ private:
 public:
     Certificate(string _ID, string _Name, string _Rank, string _Date)
         : ID(_ID), Name(_Name), Rank(_Rank), Date(_Date) {}
-
+    ~Certificate() {}
     void setID(string _ID)
     {
         ID = _ID;

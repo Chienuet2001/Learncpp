@@ -14,6 +14,8 @@ public:
     Fresher(string _graDate,string _graRank,string _education , int _id, string _fullName, string _phone, string _email, EmployeeType _employeeType, const vector<Certificate *> &_certificates)
         : Employee(_id, _fullName, _phone, _email, _employeeType, _certificates), graDate(_graDate), graRank(_graRank), education(_education) {}
 
+    ~Fresher() {}
+
     void setGraDate(string _graDate)
     {
         graDate = _graDate;

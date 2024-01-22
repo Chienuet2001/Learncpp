@@ -14,7 +14,8 @@ private:
 
 public:
     Manager() {}
-
+    ~Manager() {}
+ 
     void add(Employee &e)
     {
         employees.push_back(&e);
@@ -45,8 +46,8 @@ public:
 
     void edit()
     {
-
-    }
+        
+    } 
 
     void showAllEmployee() const
     {
